@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>The Horse Girl Racing (My Version)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <div id="leftPanel">
+      <div id="characterPreview">No Uma selected</div>
+      <button id="statButton" onclick="toggleStatPanel()">-&gt;</button>
+    </div>
+    <div id="rightPanel">
+      <button id="infoButton" onclick="toggleInfoPanel()">Information</button>
+      <button id="characterPanelList" onclick="toggleCharacterPanel()">Select Uma</button>
+      <button onclick="startRace()">Start Race</button>
+    </div>
+  </div>
+
+  <div id="infoPanel">
+  <div class="infoContent">
+    <h2 style="text-align: center;">How to play</h2>
+    <h3>Basic</h3>
+    <ul>
+      <li>Before starting a race, choose your character by selecting "Select Uma" on the right side of the screen.</li>
+      <li>There are many characters available—pick your favorite to compete with.</li>
+      <li>You can view each character's base speed stats by clicking the "->" button on the left side of the screen.</li>
+      <li>Once you've made your choice, close the panel by pressing "Done" at the bottom.</li>
+      <li>Then select "Start Race" to begin racing with your chosen character.</li>
+      <li style="color: red;">Note: You cannot start a race unless you have selected a character.</li>
+    </ul>
+    <h3>Race</h3>
+    <ul>
+      <li>You will compete against 6 other characters on a track that is 8000 pixels long.</li>
+      <li>Every character receives a random speed boost between 0.0-0.9 every five seconds during the race.</li>
+      <li>Your chosen character will activate their unique skill to boost speed at a random time between 70-100 seconds after the race begins.</li>
+      <li>One of your opponens will also activate their unique skill within the same time range.</li>
+      <li>Each skill lasts for 10 seconds and can only be used once per race.</li>
+    </ul>
+    <h2 style="text-align: center;">HAPPY PLAYING!!</h2>
+  </div>
+  <div class="infoFooter">
+    <button id="closeInfo">Close</button>
+  </div>
+</div>
+
+  <div id="characterPanel">
+    <h2>Select your Uma</h2>
+    <div id="characterList" class="characterContent"></div>
+    <div class="characterFooter">
+      <button onclick="toggleCharacterPanel()">Done</button>
+    </div>
+  </div>
+
+<div id="statPanel">
+  <h3 id="statName">Name: -</h3>
+  <p id="statSpeed">Base Speed: -</p>
+  <div class="bar">
+    <div id="statBar"></div>
+  </div>
+</div>
+  
+<div id="finishTablePanel">
+  <h2>Race Results</h2>
+  <table id="finishTable"></table>
+  <button onclick="closeFinishTable()">Close</button>
+</div>
+
+  <canvas id="gameCanvas" width="800" height="400" style="display:none;"></canvas>
+  
+  <div id="noCharacterNotification">
+    <p>Select your Uma first!</p>
+    <button id="closeNotification">Ok</button>
+  </div>
+  
+  <div id="skillNotificationArea"></div>
+  
+  <div id="finishNotifications"></div>
+
+  <script src="game.js"></script>
+</body>
+</html>

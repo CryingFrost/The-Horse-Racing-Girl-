@@ -1,0 +1,1 @@
+This project is the result of my boredom because I can't play the horse girl games that are currently popular :V
