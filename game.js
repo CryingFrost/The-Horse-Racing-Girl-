@@ -1,22 +1,42 @@
 let characters = [
-  { id: 0, name: "Symboli Rudolf",  baseSpeed: 0.5, skillName: "The Emperor's", faceSprite: "/assets/Character image/symboli_rudolf_icon.png", halfBodySprite: "/assets/Character image/symboli_rudolf_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/symboli_rudolf_race.png", voice: "/assets/Character voice/symboli_rudolf_voice.mp3", finished: false},
-  { id: 1, name: "Special Week", baseSpeed: 0.5, skillName: "Ruler of Japan", faceSprite: "/assets/Character image/special_week_icon.png", halfBodySprite: "/assets/Character image/special_week_half.png", previewMarginTop: 140, raceSprite: "/assets/Character image/special_week_race.png", voice: "/assets/Character voice/special_week_voice.mp3", finished: false },
-  { id: 2, name: "Seiun Sky", baseSpeed: 0.5, skillName: "The Trickster", faceSprite: "/assets/Character image/seiun_sky_icon.png", halfBodySprite: "/assets/Character image/seiun_sky_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/seiun_sky_race.png", voice: "/assets/Character voice/seiun_sky_voice.mp3", finished: false},
-  { id: 3, name: "Satono Diamond", baseSpeed: 0.5, skillName: "A Dream-Chasing Gem", faceSprite: "/assets/Character image/satono_diamond_icon.png", halfBodySprite: "/assets/Character image/satono_diamond_half.png", previewMarginTop: 160, raceSprite: "/assets/Character image/satono_diamond_race.png", voice: "/assets/Character voice/satono_diamond_voice.mp3", finished: false},
-  { id: 4, name: "Matikanetannhauser", baseSpeed: 0.4, skillName: "The Late Bloomer", faceSprite: "/assets/Character image/matikanetannhauser_icon.png", halfBodySprite: "/assets/Character image/matikanetannhauser_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/matikanetannhauser_race.png", voice: "/assets/Character voice/matikanetannhauser_voice.mp3", finished: false},
-  { id: 5, name: "Kitasan Black", baseSpeed: 0.6, skillName: "The Festival Girl", faceSprite: "/assets/Character image/kitasan_black_icon.png", halfBodySprite: "/assets/Character image/kitasan_black_half.png", previewMarginTop: 190, raceSprite: "/assets/Character image/kitasan_black_race.png", voice: "/assets/Character voice/kitasan_black_voice.mp3", finished: false},
-  { id: 6, name: "Gold Ship", baseSpeed: 0.5, skillName: "Unpredictable", faceSprite: "/assets/Character image/gold_ship_icon.png", halfBodySprite: "/assets/Character image/gold_ship_half.png", previewMarginTop: 200, raceSprite: "/assets/Character image/gold_ship_race.png", voice: "/assets/Character voice/gold_ship_voice.mp3", finished: false},
-  { id: 7, name: "Cheval Grand", baseSpeed: 0.6, skillName: "A Magnificent Umamusume", faceSprite: "/assets/Character image/cheval_grand_icon.png", halfBodySprite: "/assets/Character image/cheval_grand_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/cheval_grand_race.png", voice: "/assets/Character voice/cheval_grand_voice.mp3", finished: false},
-  { id: 8, name: "Oguri Cap", baseSpeed: 0.6, skillName: "The Grey Phantom", faceSprite: "/assets/Character image/oguri_cap_icon.png", halfBodySprite: "/assets/Character image/oguri_cap_half.png", previewMarginTop: 190, raceSprite: "/assets/Character image/oguri_cap_race.png", voice: "/assets/Character voice/oguri_cap_voice.mp3", finished: false},
-  { id: 9, name: "Tamamo Cross", baseSpeed: 0.6, skillName: "The White Lighting", faceSprite: "/assets/Character image/tamamo_cross_icon.png", halfBodySprite: "/assets/Character image/tamamo_cross_half.png", previewMarginTop: 130, raceSprite: "/assets/Character image/tamamo_cross_race.png", voice: "/assets/Character voice/tamamo_cross_voice.mp3", finished: false},
-  { id: 10, name: "Tokai Teio", baseSpeed: 0.5, skillName: "The Monarch's", faceSprite: "/assets/Character image/tokai_teio_icon.png", halfBodySprite: "/assets/Character image/tokai-teio_half.png", previewMarginTop: 100, raceSprite: "/assets/Character image/tokai_teio_race.png", voice: "/assets/Character voice/tokai_teio_voice.mp3", finished: false},
-  { id: 11, name: "Nice Nature", baseSpeed: 0.4, skillName: "The Supporting Star", faceSprite: "/assets/Character image/nice_nature_icon.png", halfBodySprite: "/assets/Character image/nice_nature_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/nice_nature_race.png", voice: "/assets/Character voice/nice_nature_voice.mp3", finished: false},
-  { id: 12, name: "Matikanefukukitaru", baseSpeed: 0.5, skillName: "Shiraoki's Luck", faceSprite: "/assets/Character image/matikanefukukitaru_icon.png", halfBodySprite: "/assets/Character image/matikanefukukitaru_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/matikanefukukitaru_race.png", voice: "/assets/Character voice/matikanefukukitaru_voice.mp3", finished: false},
-  { id: 13, name: "Meisho Doto", baseSpeed: 0.5, skillName: "Silver Collector", faceSprite: "/assets/Character image/meisho_doto_icon.png", halfBodySprite: "/assets/Character image/meisho_doto_half.png",previewMarginTop: 190, raceSprite: "/assets/Character image/meisho_doto_race.png", voice: "/assets/Character voice/meisho_doto_voice.mp3", finished: false},
-  { id: 14, name: "Rice Shower", baseSpeed: 0.6, skillName: "Assassin's", faceSprite: "/assets/Character image/rice_shower_icon.png", halfBodySprite: "/assets/Character image/rice_shower_half.png", previewMarginTop: 150, raceSprite: "/assets/Character image/rice_shower_race.png", voice: "/assets/Character voice/rice_shower_voice.mp3", finished: false},
-  { id: 15, name: "Jungle Pocket", baseSpeed: 0.5, skillName: "Roar of Victory", faceSprite: "/assets/Character image/jungle_pocket_icon.png", halfBodySprite: "/assets/Character image/jungle_pocket_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/jungle_pocket_race.png", voice: "/assets/Character voice/jungle_pocket_voice.mp3", finished: false},
-  { id: 16, name: "Super Creek", baseSpeed: 0.5, skillName: "Speedy Stayer", faceSprite: "/assets/Character image/super_creek_icon.png", halfBodySprite: "/assets/Character image/super_creek_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/super_creek_race.png", voice: "/assets/Character voice/super_creek_voice.mp3", finished: false}
+  { id: 0, name: "Symboli Rudolf",  baseSpeed: 1.1, skillName: "The Emperor's", faceSprite: "/assets/Character image/symboli_rudolf_icon.png", halfBodySprite: "/assets/Character image/symboli_rudolf_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/symboli_rudolf_race.png", voice: "/assets/Character voice/symboli_rudolf_voice.mp3", finished: false},
+  { id: 1, name: "Special Week", baseSpeed: 1.1, skillName: "Ruler of Japan", faceSprite: "/assets/Character image/special_week_icon.png", halfBodySprite: "/assets/Character image/special_week_half.png", previewMarginTop: 140, raceSprite: "/assets/Character image/special_week_race.png", voice: "/assets/Character voice/special_week_voice.mp3", finished: false },
+  { id: 2, name: "Seiun Sky", baseSpeed: 1.1, skillName: "The Trickster", faceSprite: "/assets/Character image/seiun_sky_icon.png", halfBodySprite: "/assets/Character image/seiun_sky_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/seiun_sky_race.png", voice: "/assets/Character voice/seiun_sky_voice.mp3", finished: false},
+  { id: 3, name: "Satono Diamond", baseSpeed: 1.2, skillName: "A Dream-Chasing Gem", faceSprite: "/assets/Character image/satono_diamond_icon.png", halfBodySprite: "/assets/Character image/satono_diamond_half.png", previewMarginTop: 160, raceSprite: "/assets/Character image/satono_diamond_race.png", voice: "/assets/Character voice/satono_diamond_voice.mp3", finished: false},
+  { id: 4, name: "Matikanetannhauser", baseSpeed: 0.9, skillName: "The Late Bloomer", faceSprite: "/assets/Character image/matikanetannhauser_icon.png", halfBodySprite: "/assets/Character image/matikanetannhauser_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/matikanetannhauser_race.png", voice: "/assets/Character voice/matikanetannhauser_voice.mp3", finished: false},
+  { id: 5, name: "Kitasan Black", baseSpeed: 1.3, skillName: "The Festival Girl", faceSprite: "/assets/Character image/kitasan_black_icon.png", halfBodySprite: "/assets/Character image/kitasan_black_half.png", previewMarginTop: 190, raceSprite: "/assets/Character image/kitasan_black_race.png", voice: "/assets/Character voice/kitasan_black_voice.mp3", finished: false},
+  { id: 6, name: "Gold Ship", baseSpeed: 1.1, skillName: "Unpredictable", faceSprite: "/assets/Character image/gold_ship_icon.png", halfBodySprite: "/assets/Character image/gold_ship_half.png", previewMarginTop: 200, raceSprite: "/assets/Character image/gold_ship_race.png", voice: "/assets/Character voice/gold_ship_voice.mp3", finished: false},
+  { id: 7, name: "Cheval Grand", baseSpeed: 1.2, skillName: "A Magnificent Umamusume", faceSprite: "/assets/Character image/cheval_grand_icon.png", halfBodySprite: "/assets/Character image/cheval_grand_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/cheval_grand_race.png", voice: "/assets/Character voice/cheval_grand_voice.mp3", finished: false},
+  { id: 8, name: "Oguri Cap", baseSpeed: 1.1, skillName: "The Grey Phantom", faceSprite: "/assets/Character image/oguri_cap_icon.png", halfBodySprite: "/assets/Character image/oguri_cap_half.png", previewMarginTop: 190, raceSprite: "/assets/Character image/oguri_cap_race.png", voice: "/assets/Character voice/oguri_cap_voice.mp3", finished: false},
+  { id: 9, name: "Tamamo Cross", baseSpeed: 1.1, skillName: "The White Lighting", faceSprite: "/assets/Character image/tamamo_cross_icon.png", halfBodySprite: "/assets/Character image/tamamo_cross_half.png", previewMarginTop: 130, raceSprite: "/assets/Character image/tamamo_cross_race.png", voice: "/assets/Character voice/tamamo_cross_voice.mp3", finished: false},
+  { id: 10, name: "Tokai Teio", baseSpeed: 1.1, skillName: "The Monarch's", faceSprite: "/assets/Character image/tokai_teio_icon.png", halfBodySprite: "/assets/Character image/tokai-teio_half.png", previewMarginTop: 100, raceSprite: "/assets/Character image/tokai_teio_race.png", voice: "/assets/Character voice/tokai_teio_voice.mp3", finished: false},
+  { id: 11, name: "Nice Nature", baseSpeed: 1.0, skillName: "The Supporting Star", faceSprite: "/assets/Character image/nice_nature_icon.png", halfBodySprite: "/assets/Character image/nice_nature_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/nice_nature_race.png", voice: "/assets/Character voice/nice_nature_voice.mp3", finished: false},
+  { id: 12, name: "Matikanefukukitaru", baseSpeed: 1.1, skillName: "Shiraoki's Luck", faceSprite: "/assets/Character image/matikanefukukitaru_icon.png", halfBodySprite: "/assets/Character image/matikanefukukitaru_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/matikanefukukitaru_race.png", voice: "/assets/Character voice/matikanefukukitaru_voice.mp3", finished: false},
+  { id: 13, name: "Meisho Doto", baseSpeed: 1.1, skillName: "Silver Collector", faceSprite: "/assets/Character image/meisho_doto_icon.png", halfBodySprite: "/assets/Character image/meisho_doto_half.png",previewMarginTop: 190, raceSprite: "/assets/Character image/meisho_doto_race.png", voice: "/assets/Character voice/meisho_doto_voice.mp3", finished: false},
+  { id: 14, name: "Rice Shower", baseSpeed: 1.2, skillName: "Assassin's", faceSprite: "/assets/Character image/rice_shower_icon.png", halfBodySprite: "/assets/Character image/rice_shower_half.png", previewMarginTop: 150, raceSprite: "/assets/Character image/rice_shower_race.png", voice: "/assets/Character voice/rice_shower_voice.mp3", finished: false},
+  { id: 15, name: "Jungle Pocket", baseSpeed: 1.1, skillName: "Roar of Victory", faceSprite: "/assets/Character image/jungle_pocket_icon.png", halfBodySprite: "/assets/Character image/jungle_pocket_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/jungle_pocket_race.png", voice: "/assets/Character voice/jungle_pocket_voice.mp3", finished: false},
+  { id: 16, name: "Super Creek", baseSpeed: 1.1, skillName: "Speedy Stayer", faceSprite: "/assets/Character image/super_creek_icon.png", halfBodySprite: "/assets/Character image/super_creek_half.png", previewMarginTop: 170, raceSprite: "/assets/Character image/super_creek_race.png", voice: "/assets/Character voice/super_creek_voice.mp3", finished: false}
 ];
+
+characters.forEach(char => {
+  char.loadedImages = {};
+
+  const faceImg = new Image();
+  faceImg.src = char.faceSprite;
+  faceImg.onload = () => console.log(`${char.name} face loaded`);
+  char.loadedImages.face = faceImg;
+
+  const halfImg = new Image();
+  halfImg.src = char.halfBodySprite;
+  halfImg.onload = () => console.log(`${char.name} half-body loaded`);
+  char.loadedImages.half = halfImg;
+
+  const raceImg = new Image();
+  raceImg.src = char.raceSprite;
+  raceImg.onload = () => console.log(`${char.name} race loaded`);
+  char.loadedImages.race = raceImg;
+});
+
 
 let selectedCharacter = null;
 let canvas = document.getElementById("gameCanvas");
@@ -123,7 +143,9 @@ function selectCharacter(c) {
   statPanel.style.display = "block";
   document.getElementById("statName").innerText = "Name: " + c.name;
   document.getElementById("statSpeed").innerText = "Base Speed: " + c.baseSpeed.toFixed(2);
-  document.getElementById("statBar").style.width = (c.baseSpeed * 100) + "%";
+  const maxSpeed = 5.0; 
+  const percentage = (c.baseSpeed / maxSpeed) * 100;
+  document.getElementById("statBar").style.width = percentage + "%";
   
   if (c.voice) {
     if (currentVoice) {
